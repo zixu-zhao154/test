@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能农业监测系统 - 大创项目</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 页眉 -->
+    <header>
+        <div class="container">
+            <h1>智能农业监测系统</h1>
+            <nav>
+                <ul>
+                    <li><a href="#project-intro">项目介绍</a></li>
+                    <li><a href="#team-members">团队风采</a></li>
+                    <li><a href="#showcase">成果展示</a></li>
+                    <li><a href="#contact">联系我们</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 项目介绍区 -->
+    <section id="project-intro" class="section">
+        <div class="container">
+            <h2>项目介绍</h2>
+            
+            <h3>项目背景</h3>
+            <p>随着城市化进程的加速，传统农业面临着劳动力短缺、资源浪费和环境污染等多重挑战。如何利用现代科技手段提升农业生产效率，已成为亟待解决的社会问题。</p>
+            
+            <h3>项目目标</h3>
+            <p>本项目旨在设计并实现一套基于物联网的智能农业监测系统，通过实时数据采集与分析，实现对农作物生长环境的精准调控，最终达到节水、节肥、增产、提质的目标。</p>
+            
+            <h3>技术路线</h3>
+            <div class="tech-roadmap">
+                <img src="images/tech-roadmap.png" alt="项目技术路线图" onerror="this.style.display='none'">
+                <p>系统采用传感器网络进行数据采集，通过无线通信技术将数据传输至云端服务器，利用大数据分析平台进行智能决策，并通过Web应用向用户提供可视化界面和远程控制功能。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 团队成员展示区 -->
+    <section id="team-members" class="section bg-light">
+        <div class="container">
+            <h2>团队成员</h2>
+            <ul class="team-list">
+                <li>
+                    <div class="member-card">
+                        <div class="member-avatar">👨‍💻</div>
+                        <div class="member-info">
+                            <h3>张三</h3>
+                            <p class="role">项目负责人 / 全栈开发</p>
+                            <p>计算机科学与技术专业大三学生，负责项目整体架构设计与后端开发，对物联网和云计算有深入研究。</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="member-card">
+                        <div class="member-avatar">👩‍💻</div>
+                        <div class="member-info">
+                            <h3>李四</h3>
+                            <p class="role">前端工程师</p>
+                            <p>软件工程专业大二学生，负责Web前端界面设计与开发，精通HTML、CSS和JavaScript，追求极致的用户体验。</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="member-card">
+                        <div class="member-avatar">👨‍🔬</div>
+                        <div class="member-info">
+                            <h3>王五</h3>
+                            <p class="role">硬件工程师</p>
+                            <p>电子信息工程专业大三学生，负责传感器选型、电路设计和硬件集成，具备丰富的嵌入式开发经验。</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="member-card">
+                        <div class="member-avatar">👩‍🔬</div>
+                        <div class="member-info">
+                            <h3>赵六</h3>
+                            <p class="role">数据分析师</p>
+                            <p>数据科学与大数据技术专业大二学生，负责数据处理、算法设计和可视化分析，擅长Python和机器学习。</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 成果展示区 -->
+    <section id="showcase" class="section">
+        <div class="container">
+            <h2>成果展示</h2>
+            <div class="carousel-container">
+                <div class="carousel-slide active">
+                    <h3>系统架构图</h3>
+                    <p>展示了我们项目的整体技术架构和模块设计</p>
+                </div>
+                <div class="carousel-slide">
+                    <h3>硬件原型</h3>
+                    <p>自主研发的传感器节点和网关设备</p>
+                </div>
+                <div class="carousel-slide">
+                    <h3>软件界面</h3>
+                    <p>用户友好的Web管理平台界面</p>
+                </div>
+                <button class="carousel-button prev">‹</button>
+                <button class="carousel-button next">›</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <h2>联系我们</h2>
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name">姓名:</label>
+                    <input type="text" id="name" name="name" required>
+                    <span id="name-error" class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">邮箱:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span id="email-error" class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="message">留言:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <span id="message-error" class="error-message"></span>
+                </div>
+                <button type="submit" class="submit-btn">提交</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 智能农业监测系统项目组. All rights reserved.</p>
+            <p>联系邮箱: contact@smartfarm-project.com</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
